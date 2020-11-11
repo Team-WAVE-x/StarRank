@@ -1,8 +1,7 @@
+@import "reset.css";
+
 .App {
     text-align: center;
-}
-
-header {
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
@@ -11,4 +10,31 @@ header {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+
+.user {
+    text-align: left;
+    width: 800px;
+    height: 200px;
+    background-color: rgb(26, 26, 32);
+    border-radius: 1em;
+}
+
+.user-profile {
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 70%;
+    width: 4em;
+    float: left;
+    margin-right: 0.7em;
+}
+
+header {
+    text-align: left;
+}
+
+.user-name {
+    font-size: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
 }
