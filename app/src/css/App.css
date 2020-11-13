@@ -2,22 +2,27 @@
 
 .App {
     text-align: center;
-    background-color: #282c34;
+    background-color: #ECEFF4;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: black;
+}
+
+.title {
+    padding-bottom: 1em;
 }
 
 .user {
     text-align: left;
     width: 800px;
     height: 200px;
-    background-color: rgb(26, 26, 32);
+    background-color: white;
     border-radius: 1em;
+    margin-bottom: 1em;
 }
 
 .user-profile {
