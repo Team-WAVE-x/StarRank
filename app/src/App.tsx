@@ -3,17 +3,22 @@ import React from 'react'
 import './css/App.css'
 import './components/UserContent'
 import UserContent from './components/UserContent'
-import getUser from './data/GetUser'
-import User from './data/User'
+const member = require('./data/member.json')
 
 function App() {
+    
     return (
         <div className="App">
             <header>
                 <h1 className="title">Team WAVE Member Star Ranking</h1>
             </header>
             <div className="users">
-                <UserContent name="1-exon" stars={10} followers={100} avatarUrl={"https://avatars2.githubusercontent.com/u/56220973?s=460&u=f0786c8d37a31c92e7885e31ebfbc153c731271a&v=4"}/>
+                <UserContent name={member[0].name} stars={member[0].stars} followers={member[0].followers}
+                avatarUrl={member[0].avatarUrl}/>
+                <UserContent name={member[0].name} stars={member[0].stars} followers={member[0].followers}
+                avatarUrl={member[0].avatarUrl}/>
+                <UserContent name={member[0].name} stars={member[0].stars} followers={member[0].followers}
+                avatarUrl={member[0].avatarUrl}/>
             </div>
         </div>
     )

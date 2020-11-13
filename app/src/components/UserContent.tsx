@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import getUser from '../data/GetUser'
+import React from 'react'
 
 type Props = {
     name: string,
@@ -11,6 +10,7 @@ type Props = {
 function UserContent({ name, stars, followers, avatarUrl }: Props) {
     return (
         <div className="user">
+            {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <img src={avatarUrl} className="user-profile" />
             <h1 id="name" className="user-name">{name}</h1>
             <p id="stars" className="user-content">Star: <b>{stars}</b></p>
