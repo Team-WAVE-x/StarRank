@@ -19,6 +19,10 @@ function App() {
                 avatarUrl={member[0].avatarUrl}/>
                 <UserContent name={member[0].name} stars={member[0].stars} followers={member[0].followers}
                 avatarUrl={member[0].avatarUrl}/>
+                <UserContent name={member[0].name} stars={member[0].stars} followers={member[0].followers}
+                avatarUrl={member[0].avatarUrl}/>
+                <UserContent name={member[0].name} stars={member[0].stars} followers={member[0].followers}
+                avatarUrl={member[0].avatarUrl}/>
             </div>
         </div>
     )
