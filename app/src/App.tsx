@@ -6,7 +6,6 @@ import UserContent from './components/UserContent'
 const member = require('./data/member.json')
 
 function App() {
-    
     return (
         <div className="App">
             <header>

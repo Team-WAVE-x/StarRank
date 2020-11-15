@@ -1,22 +1,29 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-type Props = {
+
+type UserType = {
     name: string,
     stars: number,
     followers: number,
     avatarUrl: string
 }
 
-function UserContent({ name, stars, followers, avatarUrl }: Props) {
-    return (
-        <div className="user">
-            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-            <img src={avatarUrl} className="user-profile" />
-            <h1 id="name" className="user-name">{name}</h1>
-            <p id="stars" className="user-content">Star: <b>{stars}</b></p>
-            <p id="followers" className="user-content">Followers: <b>{followers}</b></p>
-        </div>
-    )
-}
+class UserContent extends Component<UserType> {
+    // eslint-disable-next-line @typescript-eslint/no-useless-constructor
+    constructor(props: any) {
+        super(props)
+    }
 
+    public render() {
+        return (
+            <div className="user">
+                {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                <img src={this.props.avatarUrl} className="user-profile" />
+                <h1 id="name" className="user-name">{this.props.name}</h1>
+                <p id="stars" className="user-content">Star: <b>{this.props.stars}</b></p>
+                <p id="followers" className="user-content">Followers: <b>{this.props.followers}</b></p>
+            </div>
+        )
+    }
+}
 export default UserContent
