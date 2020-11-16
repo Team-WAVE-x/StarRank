@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+const member = require('../data/member.json')
 
 type UserType = {
     name: string,
