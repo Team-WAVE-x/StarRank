@@ -14,7 +14,7 @@ class App extends Component {
         return (
             <div className="App">
                 <header>
-                    <h1 className="title">Team WAVE Member Star Ranking</h1>
+                    <h1 className="title">Team WAVE Star Ranking</h1>
                 </header>
                 <div className="users">
                     <UserContent name={member[0].name} stars={member[0].stars} followers={member[0].followers}
@@ -35,6 +35,8 @@ class App extends Component {
                     avatarUrl={member[7].avatarUrl}/>
                     <UserContent name={member[8].name} stars={member[8].stars} followers={member[8].followers}
                     avatarUrl={member[8].avatarUrl}/>
+                    <UserContent name={member[9].name} stars={member[9].stars} followers={member[9].followers}
+                    avatarUrl={member[9].avatarUrl}/>
                 </div>
             </div>
         )
