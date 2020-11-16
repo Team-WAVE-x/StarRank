@@ -1,2 +1,3 @@
 # StarRank
-Team Star Rank
+Team Star Rank\
+<img src="./preview.png" width=500px>
